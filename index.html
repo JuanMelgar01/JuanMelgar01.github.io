@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>CV Juan Melgar</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="divnombre">
+            <h1 class="nombre">Juan Melgar</h1>
+        </div>
+        <div id="fotoCentral">
+            <img class="foto" src="gatito.jpg" alt="foto" />
+        </div>
+        <nav id="navContenedor">
+            <ul class="navList">
+                <li><a onclick="expandirContenido('Perfil')">Perfil profesional</a></li>
+                <li><a onclick="expandirContenido('Experiencia')">Experiencia laboral</a></li>
+                <li><a onclick="expandirContenido('Formacion')">Formación</a></li>
+                <li><a onclick="expandirContenido('Contacto')">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="ContenedorPresent">
+        <div class="izq">
+            <div id="Aptitudes" class="Aptitudes_contraido">
+                <a onclick="expandirAptitudes(this)"><h2>Aptitudes</h2></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum mollitia accusantium numquam
+                    tenetur iure! Enim sequi, sit totam nobis dolorem dolore ducimus doloremque, odit ea, nesciunt
+                    sapiente commodi natus ex!</p>
+            </div>
+            <div id="Habilidades" class="Habilidades_contraido">
+                <a onclick="expandirHabilidades(this)"><h2>Habilidades</h2></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum mollitia accusantium numquam
+                    tenetur iure! Enim sequi, sit totam nobis dolorem dolore ducimus doloremque, odit ea, nesciunt
+                    sapiente commodi natus ex!</p>
+            </div>
+        </div>
+        <div class="drch">
+            <div id="Contenido" class="contenido">
+                <div id="Perfil" class="Perfil_contraido">
+                    <h2>Perfil profesional</h2>
+                    <p>ddddddddddddddddddd ddddddddddddd ddddddddddddddd ddddddddddddddddd</p>
+                </div>
+                <div id="Experiencia" class="Experiencia_contraido">
+                    <h2>Experiencia profesional</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, necessitatibus ipsum? Numquam perspiciatis voluptas ipsam? Illo possimus repellendus delectus, est labore porro necessitatibus asperiores! Vitae alias voluptatem laborum perferendis sit!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet laudantium necessitatibus illo corporis ea pariatur possimus quas, earum placeat odit voluptatibus voluptate alias velit ratione quo minus? Itaque, facere inventore.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ut, unde earum voluptatibus laudantium quam enim deserunt nulla? Fugiat culpa in itaque fuga a omnis facilis impedit quas libero ab.
+                    </p>
+                </div>
+                <div id="Formacion" class="Formacion_contraido">
+                    <h2>Formación</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, necessitatibus ipsum? Numquam perspiciatis voluptas ipsam? Illo possimus repellendus delectus, est labore porro necessitatibus asperiores! Vitae alias voluptatem laborum perferendis sit!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet laudantium necessitatibus illo corporis ea pariatur possimus quas, earum placeat odit voluptatibus voluptate alias velit ratione quo minus? Itaque, facere inventore.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ut, unde earum voluptatibus laudantium quam enim deserunt nulla? Fugiat culpa in itaque fuga a omnis facilis impedit quas libero ab.
+                    </p>
+                </div>
+                <div id="Contacto" class="Contacto_contraido">
+                    <h2>Contacto</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, necessitatibus ipsum? Numquam perspiciatis voluptas ipsam? Illo possimus repellendus delectus, est labore porro necessitatibus asperiores! Vitae alias voluptatem laborum perferendis sit!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet laudantium necessitatibus illo corporis ea pariatur possimus quas, earum placeat odit voluptatibus voluptate alias velit ratione quo minus? Itaque, facere inventore.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ut, unde earum voluptatibus laudantium quam enim deserunt nulla? Fugiat culpa in itaque fuga a omnis facilis impedit quas libero ab.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

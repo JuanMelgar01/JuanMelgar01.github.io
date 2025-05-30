@@ -1,0 +1,236 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F4F4F4;
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'MiFuente';
+    src: url("JMH\ Typewriter-Bold.ttf");
+}
+
+header {
+    font-family: 'MiFuente';
+    width: 80%;
+    max-width: 1200px;
+    min-width: 700px;
+    height: 150px;
+    margin: auto;
+    background-color: #3498DB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#fotoCentral {
+
+    width: 100px;
+    height: 100px;
+    border: 1px solid #2C3E50;
+    border-radius: 50px;
+    margin-top: -40px;
+}
+
+.foto {
+    width: 100px;
+    border-radius: 50px;
+}
+
+.nombre {
+    color: #333;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.divnombre {
+    width: 100%;
+}
+
+.navList {
+    display: flex;
+    gap: 120px;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.navList a {
+    text-decoration: none;
+    margin: 20px;
+}
+
+.navList li:hover {
+    background-color: #3498dba3;
+    border-radius: 5px;
+}
+
+#navContenedor {
+    margin-top: 0px;
+    border-bottom: 1px solid #2C3E50;
+}
+
+.ContenedorPresent {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 1200px;
+    min-width: 700px;
+    height: 300px;
+    display: flex;
+    gap: 30px;
+}
+
+.ContenedorPresent p {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ContenedorPresent h2 {
+    margin: 10px;
+    text-align: center;
+    font-family: 'MiFuente';
+}
+
+.izq {
+    width: 30%;
+    height: 100%;
+}
+
+.drch {
+    width: 70%;
+    height: 100%;
+}
+
+.Aptitudes_contraido,
+.Habilidades_contraido {
+    align-self: flex-start;
+    width: 75%;
+    height: 50px;
+    border: 1px solid #2C3E50;
+    background-color: #3498DB;
+    color: white;
+    overflow: hidden;
+    transition: height 0.5s ease 0s,
+        width 0.3s ease 0s,
+        border-radius 0.4s ease 0s;
+
+}
+
+
+.Aptitudes_expandido,
+.Habilidades_expandido {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border: 1px solid #2C3E50;
+    background-color: #3498DB;
+    color: white;
+    align-self: flex-end;
+    transition: height 0.5s ease 0s,
+        width 0.3s ease 0s,
+        border-radius 0.4s ease 0s;
+
+}
+
+#Aptitudes:hover,
+#Habilidades:hover,
+#navContenedor li:hover {
+    cursor: pointer;
+}
+
+#Aptitudes p,
+#Habilidades p {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+#Aptitudes.visible p,
+#Habilidades.visible p {
+    transition: opacity 0.4s ease;
+    opacity: 1;
+}
+
+.contenido {
+    background-color: #3498DB;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Perfil_contraido {
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.Experiencia_contraido {
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.Formacion_contraido {
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.Contacto_contraido {
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.Perfil_expandido {
+    padding: 10px;
+    opacity: 1;
+}
+
+.Experiencia_expandido {
+    padding: 10px;
+    opacity: 1;
+}
+
+.Formacion_expandido {
+    padding: 10px;
+    opacity: 1;
+}
+
+.Contacto_expandido {
+    padding: 10px;
+    opacity: 1;
+}
+
+.Perfil_contraido h2,
+.Perfil_contraido p,
+.Experiencia_contraido h2,
+.Experiencia_contraido p,
+.Formacion_contraido h2,
+.Formacion_contraido p,
+.Contacto_contraido h2,
+.Contacto_contraido p {
+    opacity: 0;
+    width: 100%;
+}
+
+.Perfil_expandido h2,
+.Perfil_expandido p,
+.Experiencia_expandido h2,
+.Experiencia_expandido p,
+.Formacion_expandido h2,
+.Formacion_expandido p,
+.Contacto_expandido h2,
+.Contacto_expandido p {
+    transition: opacity 1s ease;
+    opacity: 1;
+    width: 100%;
+}
