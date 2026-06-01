@@ -6,75 +6,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <title>CV Juan Melgar</title>
-    <script src="script.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="divnombre">
-            <h1 class="nombre">Juan Melgar</h1>
-        </div>
-        <div id="fotoCentral">
-            <img class="foto" src="gatito.jpg" alt="foto" />
-        </div>
-        <nav id="navContenedor">
-            <ul class="navList">
-                <li><a onclick="expandirContenido('Perfil')">Perfil profesional</a></li>
-                <li><a onclick="expandirContenido('Experiencia')">Experiencia laboral</a></li>
-                <li><a onclick="expandirContenido('Formacion')">Formación</a></li>
-                <li><a onclick="expandirContenido('Contacto')">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="ContenedorPresent">
-        <div class="izq">
-            <div id="Aptitudes" class="Aptitudes_contraido">
-                <a onclick="expandirAptitudes(this)"><h2>Aptitudes</h2></a>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum mollitia accusantium numquam
-                    tenetur iure! Enim sequi, sit totam nobis dolorem dolore ducimus doloremque, odit ea, nesciunt
-                    sapiente commodi natus ex!</p>
-            </div>
-            <div id="Habilidades" class="Habilidades_contraido">
-                <a onclick="expandirHabilidades(this)"><h2>Habilidades</h2></a>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum mollitia accusantium numquam
-                    tenetur iure! Enim sequi, sit totam nobis dolorem dolore ducimus doloremque, odit ea, nesciunt
-                    sapiente commodi natus ex!</p>
-            </div>
-        </div>
-        <div class="drch">
-            <div id="Contenido" class="contenido">
-                <div id="Perfil" class="Perfil_contraido">
-                    <h2>Perfil profesional</h2>
-                    <p>ddddddddddddddddddd ddddddddddddd ddddddddddddddd ddddddddddddddddd</p>
-                </div>
-                <div id="Experiencia" class="Experiencia_contraido">
-                    <h2>Experiencia profesional</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, necessitatibus ipsum? Numquam perspiciatis voluptas ipsam? Illo possimus repellendus delectus, est labore porro necessitatibus asperiores! Vitae alias voluptatem laborum perferendis sit!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet laudantium necessitatibus illo corporis ea pariatur possimus quas, earum placeat odit voluptatibus voluptate alias velit ratione quo minus? Itaque, facere inventore.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ut, unde earum voluptatibus laudantium quam enim deserunt nulla? Fugiat culpa in itaque fuga a omnis facilis impedit quas libero ab.
-                    </p>
-                </div>
-                <div id="Formacion" class="Formacion_contraido">
-                    <h2>Formación</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, necessitatibus ipsum? Numquam perspiciatis voluptas ipsam? Illo possimus repellendus delectus, est labore porro necessitatibus asperiores! Vitae alias voluptatem laborum perferendis sit!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet laudantium necessitatibus illo corporis ea pariatur possimus quas, earum placeat odit voluptatibus voluptate alias velit ratione quo minus? Itaque, facere inventore.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ut, unde earum voluptatibus laudantium quam enim deserunt nulla? Fugiat culpa in itaque fuga a omnis facilis impedit quas libero ab.
-                    </p>
-                </div>
-                <div id="Contacto" class="Contacto_contraido">
-                    <h2>Contacto</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, necessitatibus ipsum? Numquam perspiciatis voluptas ipsam? Illo possimus repellendus delectus, est labore porro necessitatibus asperiores! Vitae alias voluptatem laborum perferendis sit!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet laudantium necessitatibus illo corporis ea pariatur possimus quas, earum placeat odit voluptatibus voluptate alias velit ratione quo minus? Itaque, facere inventore.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ut, unde earum voluptatibus laudantium quam enim deserunt nulla? Fugiat culpa in itaque fuga a omnis facilis impedit quas libero ab.
-                    </p>
-                </div>
 
-            </div>
-        </div>
-    </section>
-    <footer>
+<div class="cv-container">
+    
+    <!-- COLUMNA IZQUIERDA -->
+    <aside class="sidebar">
+        <!-- Contacto -->
+        <h3>CONTACTO</h3>
+        <p>📱 669 15 93 30</p>
+        <p>✉️ Juanmelgar01@gmail.com</p>
+        <p>🔗 <a href="https://linkedin.com/in/juanmelgar" target="_blank">in Linkedin.com/in/juanmelgar</a></p>
+        <p>💻 <a href="https://github.com/JuanMelgar01" target="_blank">github.com/JuanMelgar01</a></p>
 
-    </footer>
+        <!-- Aptitudes -->
+        <h3>APTITUDES</h3>
+        <ul>
+            <li>• Trabajo en equipo</li>
+            <li>• Aprendizaje continuo</li>
+            <li>• Organización</li>
+            <li>• Resolución de problemas</li>
+            <li>• Comunicación efectiva</li>
+        </ul>
+
+        <!-- Habilidades -->
+        <h3>HABILIDADES</h3>
+        <ul>
+            <li>
+                <span class="skill-category">• Frontend</span>
+                JavaScript - React - Angular - TypeScript - HTML5 - CSS3 - Bootstrap
+            </li>
+            <li>
+                <span class="skill-category">• Backend</span>
+                NodeJS - Express - Java - SpringBoot
+            </li>
+            <li>
+                <span class="skill-category">• BBDD</span>
+                MySQL - MongoDB
+            </li>
+            <li>
+                <span class="skill-category">• Herramientas</span>
+                GitHub - Postman
+            </li>
+            <li>
+                <span class="skill-category">• Ofimática</span>
+                Word - Excel - Access
+            </li>
+            <li>
+                <span class="skill-category">• Sistemas operativos</span>
+                Windows - MacOS - Linux
+            </li>
+        </ul>
+    </aside>
+
+    <!-- COLUMNA DERECHA -->
+    <main class="main-content">
+        <h1>Juan Melgar Barreto</h1>
+        
+        <!-- Perfil Profesional -->
+        <section>
+            <h2>Perfil profesional</h2>
+            <p class="perfil-text">
+                Desarrollador web junior con formación en Desarrollo de Aplicaciones Web y experiencia práctica en desarrollo frontend y backend.
+                He trabajado con tecnologías como HTML, CSS, JavaScript, Java y bases de datos SQL, desarrollando aplicaciones y proyectos web durante mi formación académica y prácticas profesionales.
+            </p>
+            <p class="perfil-text">
+                Tras una trayectoria profesional en gestión comercial, coordinación y administración, actualmente busco incorporarme a un equipo de desarrollo donde seguir creciendo técnicamente y aportar capacidad de organización, resolución de problemas y trabajo en equipo.
+            </p>
+        </section>
+
+        <!-- Experiencia Profesional -->
+        <section>
+            <h2>Experiencia profesional</h2>
+            
+            <div class="item-block">
+                <div class="item-header">
+                    <span class="item-title">Desarrollador Junior Java (Prácticas)</span>
+                    <span class="item-date">2026</span>
+                </div>
+                <div class="item-subtitle">Nokia Tecss</div>
+                <ul>
+                    <li>Participación en el matenimiento de app desarrolladas en Java.</li>
+                    <li>Trabajo con interfaces gráficas mediante JavaFX.</li>
+                    <li>Uso de Git para control de versiones y trabajo colaborativo.</li>
+                </ul>
+            </div>
+
+            <div class="item-block">
+                <div class="item-header">
+                    <span class="item-title">Delegado comercial</span>
+                    <span class="item-date">2013-2023</span>
+                </div>
+                <div class="item-subtitle">Morillo Energy Rent</div>
+                <ul>
+                    <li>Implantación y ejecución de la gestión comercial.</li>
+                    <li>Control y desarrollo administrativo de la delegación.</li>
+                    <li>Coordinación de personal y transporte.</li>
+                </ul>
+            </div>
+
+            <div class="item-block">
+                <div class="item-header">
+                    <span class="item-title">Responsable de compras</span>
+                    <span class="item-date">2005-2011</span>
+                </div>
+                <div class="item-subtitle">Gardner Denver Ibérica</div>
+                <ul>
+                    <li>Análisis comparativo de las ofertas.</li>
+                    <li>Gestión logística y de almacén.</li>
+                    <li>Apoyo administrativo y facturación.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Formación -->
+        <section>
+            <h2>Formación</h2>
+            
+            <div class="item-block">
+                <div class="item-header">
+                    <span class="item-title">Desarrollo de Aplicaciones Web</span>
+                    <span class="item-date">2026</span>
+                </div>
+                <div class="item-subtitle">IES Alonso de Avellaneda</div>
+            </div>
+
+            <div class="item-block">
+                <div class="item-header">
+                    <span class="item-title">Desarrollo de aplicaciones Java con RAD para WAS</span>
+                    <span class="item-date">2012</span>
+                </div>
+                <div class="item-subtitle">IBM Training</div>
+            </div>
+
+            <div class="item-block">
+                <div class="item-header">
+                    <span class="item-title">Técnico en Gestión Administrativa</span>
+                    <span class="item-date">2005</span>
+                </div>
+                <div class="item-subtitle">IES Los Olivos</div>
+            </div>
+        </section>
+
+    </main>
+</div>
 </body>
 
 </html>
