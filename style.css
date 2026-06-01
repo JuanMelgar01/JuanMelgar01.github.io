@@ -1,236 +1,115 @@
-html {
-    scroll-behavior: smooth;
-}
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .cv-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            display: flex;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        /* Barra lateral (Contacto, Aptitudes, Habilidades) */
+        .sidebar {
+            width: 35%;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 40px 30px;
+        }
+        .sidebar h3 {
+            border-bottom: 2px solid #34495e;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .sidebar p, .sidebar li {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .sidebar a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .skill-category {
+            font-weight: bold;
+            color: #3498db;
+            margin-top: 15px;
+            display: block;
+        }
 
-body {
-    background-color: #F4F4F4;
-    padding: 0px;
-    margin: 0px;
-}
-
-@font-face {
-    font-family: 'MiFuente';
-    src: url("JMH\ Typewriter-Bold.ttf");
-}
-
-header {
-    font-family: 'MiFuente';
-    width: 80%;
-    max-width: 1200px;
-    min-width: 700px;
-    height: 150px;
-    margin: auto;
-    background-color: #3498DB;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-#fotoCentral {
-
-    width: 100px;
-    height: 100px;
-    border: 1px solid #2C3E50;
-    border-radius: 50px;
-    margin-top: -40px;
-}
-
-.foto {
-    width: 100px;
-    border-radius: 50px;
-}
-
-.nombre {
-    color: #333;
-    text-align: right;
-    margin-right: 50px;
-}
-
-.divnombre {
-    width: 100%;
-}
-
-.navList {
-    display: flex;
-    gap: 120px;
-    list-style: none;
-    padding-left: 0px;
-}
-
-.navList a {
-    text-decoration: none;
-    margin: 20px;
-}
-
-.navList li:hover {
-    background-color: #3498dba3;
-    border-radius: 5px;
-}
-
-#navContenedor {
-    margin-top: 0px;
-    border-bottom: 1px solid #2C3E50;
-}
-
-.ContenedorPresent {
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    max-width: 1200px;
-    min-width: 700px;
-    height: 300px;
-    display: flex;
-    gap: 30px;
-}
-
-.ContenedorPresent p {
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.ContenedorPresent h2 {
-    margin: 10px;
-    text-align: center;
-    font-family: 'MiFuente';
-}
-
-.izq {
-    width: 30%;
-    height: 100%;
-}
-
-.drch {
-    width: 70%;
-    height: 100%;
-}
-
-.Aptitudes_contraido,
-.Habilidades_contraido {
-    align-self: flex-start;
-    width: 75%;
-    height: 50px;
-    border: 1px solid #2C3E50;
-    background-color: #3498DB;
-    color: white;
-    overflow: hidden;
-    transition: height 0.5s ease 0s,
-        width 0.3s ease 0s,
-        border-radius 0.4s ease 0s;
-
-}
-
-
-.Aptitudes_expandido,
-.Habilidades_expandido {
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    border: 1px solid #2C3E50;
-    background-color: #3498DB;
-    color: white;
-    align-self: flex-end;
-    transition: height 0.5s ease 0s,
-        width 0.3s ease 0s,
-        border-radius 0.4s ease 0s;
-
-}
-
-#Aptitudes:hover,
-#Habilidades:hover,
-#navContenedor li:hover {
-    cursor: pointer;
-}
-
-#Aptitudes p,
-#Habilidades p {
-    opacity: 0;
-    transition: opacity 0.2s ease;
-}
-
-#Aptitudes.visible p,
-#Habilidades.visible p {
-    transition: opacity 0.4s ease;
-    opacity: 1;
-}
-
-.contenido {
-    background-color: #3498DB;
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.Perfil_contraido {
-    padding: 10px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.Experiencia_contraido {
-    padding: 10px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.Formacion_contraido {
-    padding: 10px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.Contacto_contraido {
-    padding: 10px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.Perfil_expandido {
-    padding: 10px;
-    opacity: 1;
-}
-
-.Experiencia_expandido {
-    padding: 10px;
-    opacity: 1;
-}
-
-.Formacion_expandido {
-    padding: 10px;
-    opacity: 1;
-}
-
-.Contacto_expandido {
-    padding: 10px;
-    opacity: 1;
-}
-
-.Perfil_contraido h2,
-.Perfil_contraido p,
-.Experiencia_contraido h2,
-.Experiencia_contraido p,
-.Formacion_contraido h2,
-.Formacion_contraido p,
-.Contacto_contraido h2,
-.Contacto_contraido p {
-    opacity: 0;
-    width: 100%;
-}
-
-.Perfil_expandido h2,
-.Perfil_expandido p,
-.Experiencia_expandido h2,
-.Experiencia_expandido p,
-.Formacion_expandido h2,
-.Formacion_expandido p,
-.Contacto_expandido h2,
-.Contacto_expandido p {
-    transition: opacity 1s ease;
-    opacity: 1;
-    width: 100%;
-}
+        /* Contenido principal (Perfil, Experiencia, Formación) */
+        .main-content {
+            width: 65%;
+            padding: 40px 40px;
+        }
+        h1 {
+            font-size: 2.8rem;
+            color: #2c3e50;
+            margin: 0 0 5px 0;
+        }
+        .main-content h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 40px;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+        .perfil-text {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #555;
+            text-align: justify;
+        }
+        
+        /* Elementos de experiencia y formación */
+        .item-block {
+            margin-bottom: 25px;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        .item-title {
+            font-weight: bold;
+            font-size: 1.15rem;
+            color: #333;
+        }
+        .item-date {
+            font-weight: bold;
+            color: #3498db;
+            font-size: 0.95rem;
+        }
+        .item-subtitle {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+        .main-content ul {
+            padding-left: 20px;
+            color: #555;
+        }
+        .main-content ul li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
